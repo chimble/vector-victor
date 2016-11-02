@@ -55,3 +55,27 @@ def vector_mean(*args):
 def magnitude(vector1):
     squares_added = [x**2 for x in vector1]
     return (sum(squares_added))**(1/2)
+
+def matrix_row(matrix1, row_num):
+    return matrix1[row_num]
+
+def matrix_col(matrix, col_num):
+    new_list = [x[col_num] for x in matrix]
+    return new_list
+
+# def matrix_add(matrix1, matrix2):
+#     new_row = vector_add(matrix1[x], matrix2[x])
+#
+#     print(new_row)
+
+
+
+
+
+
+
+
+
+
+
+#ABCDEFG
