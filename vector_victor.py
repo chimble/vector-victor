@@ -64,9 +64,11 @@ def matrix_col(matrix, col_num):
     return new_list
 
 # def matrix_add(matrix1, matrix2):
-#     new_row = vector_add(matrix1[x], matrix2[x])
+#     new_matrix = []
 #
-#     print(new_row)
+#     new_matrix= [vector_add(matrix1[0], matrix2[0]) for x in matrix1]
+#
+#     print(new_matrix)
 
 
 
