@@ -1,5 +1,15 @@
 import math
-from vector_victor import *
+from vector_victor import shape
+from vector_victor import vector_add
+from vector_victor import vector_sub
+from vector_victor import vector_sum
+from vector_victor import dot
+from vector_victor import vector_multiply
+from vector_victor import vector_mean
+from vector_victor import magnitude
+from vector_victor import matrix_row
+from vector_victor import matrix_col
+from vector_victor import ShapeError
 from nose.tools import raises
 
 
@@ -136,7 +146,6 @@ D = [[1, 2, 3],
      [3, 2, 1]]
 
 
-
 def test_shape_matrices():
     """shape takes a vector or matrix and return a tuple with the
     number of rows (for a vector) or the number of rows and columns
@@ -171,7 +180,7 @@ def test_matrix_col():
     assert matrix_col(B, 1) == [2, 5, 8]
     assert matrix_col(D, 2) == [3, 1]
 
-# 
+#
 # def test_matrix_matrix_add():
 #     assert matrix_add(A, B) == [[2, 2, 3],
 #                                 [4, 6, 6],
